@@ -17,6 +17,8 @@ class MindustryAgent:
 
         # evaluate the proposed actions
         prioritized_actions = self.decision_maker.prioritize_actions(proposed_actions)
-        
+
+        # execute the highest priority action
+        self.decision_maker.execute_action()
         # return the decision
         pass
